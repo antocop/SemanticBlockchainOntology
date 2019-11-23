@@ -1,0 +1,210 @@
+@prefix : <http://www.semanticblockchain.com/SemanticBlockchain.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticblockchain.com/SemanticBlockchain.owl> .
+
+<http://www.semanticblockchain.com/SemanticBlockchain.owl> rdf:type owl:Ontology ;
+                                                            owl:imports <http://www.semanticblockchain.com/Blondie.owl> ;
+                                                            rdfs:comment "Extension of Blondie Ontology to interface our Blockchain"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainBlockheaderBlock
+<http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainBlockheaderBlock> rdf:type owl:ObjectProperty ,
+                                                                                               owl:FunctionalProperty ,
+                                                                                               owl:InverseFunctionalProperty ,
+                                                                                               owl:AsymmetricProperty ,
+                                                                                               owl:IrreflexiveProperty ;
+                                                                                      rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock> ;
+                                                                                      rdfs:range <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainPayloadBlock
+<http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainPayloadBlock> rdf:type owl:ObjectProperty ,
+                                                                                           owl:FunctionalProperty ,
+                                                                                           owl:IrreflexiveProperty ;
+                                                                                  rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock> ;
+                                                                                  rdfs:range <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainPayload> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionInput
+<http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionInput> rdf:type owl:ObjectProperty ,
+                                                                                               owl:IrreflexiveProperty ;
+                                                                                      rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> ;
+                                                                                      rdfs:range <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionOutput
+<http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionOutput> rdf:type owl:ObjectProperty ,
+                                                                                                owl:IrreflexiveProperty ;
+                                                                                       rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> ;
+                                                                                       rdfs:range <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticblockchain.com/Blondie.owl#hashSemanticBlockchainBlockheader
+<http://www.semanticblockchain.com/Blondie.owl#hashSemanticBlockchainBlockheader> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader> ;
+                                                                                  rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransaction
+<http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransaction> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> ;
+                                                                                rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransactionOutput
+<http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransactionOutput> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput> ;
+                                                                                      rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#parentTransactionIdSemanticBlockchainTransactionOutput
+<http://www.semanticblockchain.com/Blondie.owl#parentTransactionIdSemanticBlockchainTransactionOutput> rdf:type owl:DatatypeProperty ;
+                                                                                                       rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput> ;
+                                                                                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransaction
+<http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransaction> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> ;
+                                                                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransactionOutput
+<http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransactionOutput> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput> ;
+                                                                                             rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#signatureSemanticBlockchainTransaction
+<http://www.semanticblockchain.com/Blondie.owl#signatureSemanticBlockchainTransaction> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> ;
+                                                                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#transactionOutputIdSemanticBlockchainTransactionInput
+<http://www.semanticblockchain.com/Blondie.owl#transactionOutputIdSemanticBlockchainTransactionInput> rdf:type owl:DatatypeProperty ;
+                                                                                                      rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput> ;
+                                                                                                      rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#transactionOutputSemanticBlockchainTransactionInput
+<http://www.semanticblockchain.com/Blondie.owl#transactionOutputSemanticBlockchainTransactionInput> rdf:type owl:DatatypeProperty ;
+                                                                                                    rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput> ;
+                                                                                                    rdfs:range xsd:string .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransaction
+<http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransaction> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> ;
+                                                                                   rdfs:range xsd:decimal .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransactionOutput
+<http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransactionOutput> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:domain <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput> ;
+                                                                                         rdfs:range xsd:decimal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock
+<http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock> rdf:type owl:Class ;
+                                                             owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction
+<http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction> rdf:type owl:Class ;
+                                                                   owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput
+<http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput> rdf:type owl:Class .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#Bitcoinlockheader
+<http://www.semanticblockchain.com/Blondie.owl#Bitcoinlockheader> rdf:type owl:Class ;
+                                                                  owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#Block
+<http://www.semanticblockchain.com/Blondie.owl#Block> rdf:type owl:Class .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#Blockheader
+<http://www.semanticblockchain.com/Blondie.owl#Blockheader> rdf:type owl:Class .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#EthereumBlock
+<http://www.semanticblockchain.com/Blondie.owl#EthereumBlock> rdf:type owl:Class ;
+                                                              owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader
+<http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader> rdf:type owl:Class ;
+                                                                    owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction
+<http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction> rdf:type owl:Class ;
+                                                                    owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock
+<http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock> rdf:type owl:Class ;
+                                                                 owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction
+<http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction> rdf:type owl:Class ;
+                                                                      owl:disjointWith <http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock
+<http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticblockchain.com/Blondie.owl#Block> ;
+                                                                        rdfs:comment "SemanticBlockchain block." .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader
+<http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticblockchain.com/Blondie.owl#Blockheader> ;
+                                                                              rdfs:comment "" .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainPayload
+<http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainPayload> rdf:type owl:Class .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction
+<http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticblockchain.com/Blondie.owl#Transaction> .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput
+<http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput> rdf:type owl:Class ;
+                                                                                   rdfs:comment "SemanticBlockhain input transaction" .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput
+<http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput> rdf:type owl:Class ;
+                                                                                    rdfs:comment "SemanticBlockchain output transaction" .
+
+
+###  http://www.semanticblockchain.com/Blondie.owl#Transaction
+<http://www.semanticblockchain.com/Blondie.owl#Transaction> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

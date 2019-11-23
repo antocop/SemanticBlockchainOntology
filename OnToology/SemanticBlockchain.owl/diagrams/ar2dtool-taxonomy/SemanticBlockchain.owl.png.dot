@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader" ; /*classes style*/
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "http://www.semanticblockchain.com/Blondie.owl#Transaction" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" -> "http://www.semanticblockchain.com/Blondie.owl#Block" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader" -> "http://www.semanticblockchain.com/Blondie.owl#Blockheader" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,245 @@
+[ {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#Bitcoinlockheader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#Block",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#Blockheader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#EthereumBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SemanticBlockchain block."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#Block"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#Blockheader"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainPayload",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#Transaction"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SemanticBlockhain input transaction"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SemanticBlockchain output transaction"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#Transaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainBlockheaderBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainPayloadBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainPayload"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#hashSemanticBlockchainBlockheader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransactionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#parentTransactionIdSemanticBlockchainTransactionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransactionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#signatureSemanticBlockchainTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#transactionOutputIdSemanticBlockchainTransactionInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#transactionOutputSemanticBlockchainTransactionInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransactionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticblockchain.com/SemanticBlockchain.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Extension of Blondie Ontology to interface our Blockchain"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.semanticblockchain.com/Blondie.owl"
+  } ]
+} ]

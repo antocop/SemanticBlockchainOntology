@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput" "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput" "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader" ; /*classes style*/
+	"NULL" -> "-3592f45d:16e99340fc0:-7ffb" [ label = ":rameset" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "http://www.semanticblockchain.com/Blondie.owl#HyperlegerTransaction" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "http://www.semanticblockchain.com/Blondie.owl#BitcoinTransaction" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "http://www.semanticblockchain.com/Blondie.owl#EthereumTransaction" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/SemanticBlockchain.owl" -> "http://www.semanticblockchain.com/Blondie.owl" [ label = "owl:imports" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader" -> "http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader" -> "http://www.semanticblockchain.com/Blondie.owl#Bitcoinlockheader" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" -> "http://www.semanticblockchain.com/Blondie.owl#HyperledgerBlock" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" -> "http://www.semanticblockchain.com/Blondie.owl#BitcoinBlock" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" -> "http://www.semanticblockchain.com/Blondie.owl#EthereumBlock" [ label = "owl:disjointWith" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "xsd:decimal" [ label = "http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransaction" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransactionOutput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" -> "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlockheader" [ label = "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainBlockheaderBlock" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#idSemanticBlockchainTransaction" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainBlock" -> "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainPayload" [ label = "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainPayloadBlock" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransactionOutput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput" -> "xsd:decimal" [ label = "http://www.semanticblockchain.com/Blondie.owl#valueSemanticBlockchainTransactionOutput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#EthereumBlockheader" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#hashSemanticBlockchainBlockheader" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput" [ label = "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionOutput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#transactionOutputIdSemanticBlockchainTransactionInput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionInput" [ label = "http://www.semanticblockchain.com/Blondie.owl#hasSemanticBlockchainTransactionInput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#signatureSemanticBlockchainTransaction" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#parentTransactionIdSemanticBlockchainTransactionOutput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#BitcoinTransactionInput" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#transactionOutputSemanticBlockchainTransactionInput" ];
+	"http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransaction" -> "xsd:string" [ label = "http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransaction" ];
+
+}
