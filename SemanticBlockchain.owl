@@ -99,7 +99,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#recepientSemanticBlockchainTransactionOutput">
+    <owl:DatatypeProperty rdf:about="http://www.semanticblockchain.com/Blondie.owl#recipientSemanticBlockchainTransactionOutput">
         <rdfs:domain rdf:resource="http://www.semanticblockchain.com/Blondie.owl#SemanticBlockchainTransactionOutput"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
